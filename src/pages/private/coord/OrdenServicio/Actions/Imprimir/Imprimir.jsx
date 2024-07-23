@@ -40,7 +40,9 @@ const index = () => {
     const sPago = handleGetInfoPago(infoOrden.ListPago, infoOrden.totalNeto);
 
     if (number) {
-      const mensaje = `¡Hola *${infoOrden.Nombre}* ! Le saluda la *Lavanderia ${
+      const mensaje = `¡Hola *${
+        infoOrden.Nombre
+      }* ! Le saluda la *Lavanderia y Tintoreia ${
         InfoNegocio.name
       }*, Su Orden es la *#${infoOrden.codRecibo}*, ${
         sPago.estado === "Completo"
